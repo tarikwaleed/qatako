@@ -1,0 +1,15 @@
+ERROR 2024-08-20 16:09:28,385 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): division by zero
+ERROR 2024-08-20 16:29:13,526 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): Expecting value: line 1 column 1 (char 0)
+ERROR 2024-08-20 16:30:27,513 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): Expecting value: line 1 column 1 (char 0)
+ERROR 2024-08-20 16:34:03,888 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): Expecting value: line 1 column 1 (char 0)
+ERROR 2024-08-20 16:36:05,950 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): Expecting value: line 1 column 1 (char 0)
+ERROR 2024-08-20 22:19:12,341 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): 'NoneType' object is not subscriptable
+ERROR 2024-08-20 22:23:15,686 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): 'NoneType' object has no attribute 'get'
+ERROR 2024-08-20 22:24:00,394 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): 'NoneType' object has no attribute 'get'
+ERROR 2024-08-20 22:38:50,883 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): 'NoneType' object is not subscriptable
+ERROR 2024-08-20 22:46:35,172 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): 'list' object has no attribute 'get'
+ERROR 2024-08-20 23:03:45,333 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): Product price is None for item ID: 095906
+ERROR 2024-08-21 00:20:14,451 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): 'dict' object has no attribute 'product_name'
+ERROR 2024-08-21 00:23:42,127 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): 'dict' object has no attribute 'product_name'
+ERROR 2024-08-21 00:42:30,277 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): HTTPSConnectionPool(host='qatako.com', port=443): Read timed out. (read timeout=5)
+ERROR 2024-08-26 08:27:04,905 glue exception happened in Package:t14wcglue.management.commands Module:t14wcglue.management.commands.glue Function:handle(): [Errno 2] No such file or directory: '/home/tarik/repos/qatako/turn14-woocommerce/app/resources/t14/all_fitment.json'

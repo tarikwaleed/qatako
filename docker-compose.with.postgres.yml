@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  nginx:
+    build: ./nginx
+    image: nginx
+    container_name: "production_nginx_container"
+    ports:
+      - 80:80
+    depends_on:
+      - app
+    volumes:
+      - ./app/local-cdn:/local-cdn
+  app:
+    image: app
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    container_name: "production_app_container"
+    entrypoint: ./docker-entrypoint.sh
+    expose:
+      - 8000:8000
+    command: sh -c "cd /app/src && gunicorn --reload core.wsgi --bind 0.0.0.0:8000 --workers 4 --threads 4 --timeout 120"
+    env_file:
+      - "./app/.env"
+    depends_on:
+      - postgres
+    volumes:
+      # - ./app/src:/app/src
+      - ./app/src/logs:/logs
+      - ./app/local-cdn:/app/local-cdn
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: "production_postgres_container"
+    env_file:
+      - ./app/.env.postgres.production
+    volumes:
+      - /usr/first_django_app_db/data/postgresql:/var/lib/postgresql/data
